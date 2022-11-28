@@ -151,9 +151,11 @@ app.get("/", async (req, res) => {
 });
 
 app.get("/sectors", async (req, res) => {
-  const result = await findInDB("sectors", productSchema);
+  const Product = mongoose.model(collection, schema);
+  let data = await Product.find({}).SetFields(Fields.Exclude("_id", "__v"));
+  console.log(data);
 
-  res.send(result);
+  res.send(data);
 });
 
 app.get("/users", async (req, res) => {
