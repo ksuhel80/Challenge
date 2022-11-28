@@ -145,6 +145,10 @@ const findInDB = async (collection, schema) => {
   return data;
 };
 
+app.get("/", async (req, res) => {
+  res.send("Welcome");
+});
+
 app.get("/sectors", async (req, res) => {
   const result = await findInDB("sectors", productSchema);
 
