@@ -35,7 +35,11 @@ const productSchema = new mongoose.Schema({
       children: [
         {
           name: String,
-          children: [String],
+          children: [
+            {
+              label: String,
+            },
+          ],
         },
       ],
     },
