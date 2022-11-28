@@ -151,7 +151,7 @@ app.get("/", async (req, res) => {
 });
 
 app.get("/sectors", async (req, res) => {
-  const Product = mongoose.model(collection, schema);
+  const Product = mongoose.model("sectors", productSchema);
   let data = await Product.find({}).SetFields(Fields.Exclude("_id", "__v"));
   console.log(data);
 
