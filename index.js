@@ -29,13 +29,13 @@ mongoose
 
 const productSchema = new mongoose.Schema({
   name: String,
-  sub_sector: [
+  children: [
     {
       name: String,
-      subs: [
+      children: [
         {
           name: String,
-          sub: [String],
+          children: [String],
         },
       ],
     },
