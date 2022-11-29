@@ -132,7 +132,7 @@ const updateInDB = async (dataa) => {
   if (data.matchedCount === 0) {
     let data = new Product({
       name: dataa.name,
-      sectors: dataa.name,
+      sectors: dataa.sectors,
       terms: dataa.terms,
     });
     const result = await data.save();
