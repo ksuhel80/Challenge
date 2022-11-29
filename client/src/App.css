@@ -1,0 +1,55 @@
+.layer1 {
+  margin-left: 20px;
+}
+.layer2 {
+  display: flex;
+
+  align-items: center;
+}
+.App {
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  margin-bottom: 30px;
+  background: #d5bcea;
+  padding: 20px;
+  border-radius: 20px;
+}
+.input {
+  border-radius: 5px;
+  font-size: 16px;
+}
+.save {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.div {
+  background-color: azure;
+  max-width: 400px;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+@media only screen and (min-width: 968px) {
+  .App {
+    margin: 30px 300px;
+  }
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #bc9cd6;
+}
